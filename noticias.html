@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Notícias — Colégio Leôncio Correia</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand"><h1><strong>COLÉGIO LEÔNCIO CORREIA</strong></h1></div>
+    <button id="btn-hamburger" class="hamburger" aria-label="Abrir menu">☰</button>
+    <nav id="main-nav" class="main-nav" aria-label="Navegação principal">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="noticias.html">Notícias</a></li>
+        <li><a href="historia.html">História</a></li>
+        <li><a href="admin.html">Admin</a></li>
+        <li><a href="referencias.html">Referências</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h2>Portal de Notícias</h2>
+    <p>Lista pública das notícias.</p>
+
+    <!-- IMPORTANTE: IDs abaixo são usados pelo JavaScript. NÃO REMOVER -->
+    <div class="news-grid">
+      <div class="news-theme" id="esportes">
+        <h3>Esportes</h3>
+        <div class="cards" id="esportes-cards">
+          <!-- cards serão inseridos aqui pelo JS -->
+        </div>
+      </div>
+      <div class="news-theme" id="enem">
+        <h3>ENEM</h3>
+        <div class="cards" id="enem-cards">
+          <!-- se tiver notícias sobre ENEM, vão aparecer aqui -->
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <strong>2025</strong> <strong>COLÉGIO LEÔNCIO CORREIA</strong> — Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Admin — Colégio Leôncio Correia</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand"><h1><strong>COLÉGIO LEÔNCIO CORREIA</strong></h1></div>
+    <button id="btn-hamburger" class="hamburger" aria-label="Abrir menu">☰</button>
+    <nav id="main-nav" class="main-nav" aria-label="Navegação principal">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="noticias.html">Notícias</a></li>
+        <li><a href="historia.html">História</a></li>
+        <li><a href="admin.html">Admin</a></li>
+        <li><a href="referencias.html">Referências</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h2>Painel de Publicação</h2>
+    <!-- Formulário simples: Título / Tema / Conteúdo -->
+    <form id="news-form" class="news-form">
+      <label for="title">Título</label>
+      <input id="title" name="title" required>
+
+      <label for="theme">Tema</label>
+      <select id="theme" name="theme">
+        <option value="Esportes">Esportes</option>
+        <option value="ENEM">ENEM</option>
+        <option value="Outros">Outros</option>
+      </select>
+
+      <label for="content">Conteúdo</label>
+      <textarea id="content" name="content" rows="6" required></textarea>
+
+      <button type="submit">Publicar</button>
+      <div id="form-msg" class="form-msg" aria-live="polite"></div>
+    </form>
+
+    <section class="admin-list">
+      <h3>Notícias Publicadas</h3>
+      <div id="admin-news-list">
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <strong>2025</strong> <strong>COLÉGIO LEÔNCIO CORREIA</strong> — Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
